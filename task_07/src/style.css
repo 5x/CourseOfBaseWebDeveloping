@@ -1,0 +1,160 @@
+body {
+  font: 11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+  color: #333;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.login-form {
+  min-width: 320px;
+  background: #fff;
+  padding: 7% 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form-content {
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login-form h1 {
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.el label {
+  color: #999999;
+  font-size: 66.66%;
+  display: block;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  background: inherit;
+  width: 100%;
+  text-indent: 7px;
+  outline: none;
+  border: 1px solid #ccc;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #0087d7;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+input:focus:invalid {
+  border-color: #d73a3d;
+}
+
+select {
+  width: 100%;
+  outline: none;
+  background: inherit;
+  border: 1px solid #ccc;
+  padding: 6px 0;
+  height: 32px;
+  text-indent: 5px;
+  line-height: 1;
+}
+
+.el {
+  padding: 5px;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.last-half {
+  clear: right;
+}
+
+.first-half {
+  float: left;
+  width: 40%;
+}
+
+
+input[type="submit"] {
+  border: 2px solid #0087d7;
+  background: inherit;
+  outline: none;
+  padding: 8px 20px;
+  line-height: 1;
+  min-width: 200px;
+  display: block;
+  margin: 15px auto;
+  color: #000;
+}
+
+
+
+/*Pizza html*/
+.pizza-form {
+  width: 80%;
+  min-width: 300px;
+  max-width: 640px;
+  margin: 5% auto;
+}
+
+.pizza-form .form-content {
+  min-width: 250px;
+  width: 50%;
+  float: left;
+}
+
+label.check-label {
+  font-size: 100%;
+  text-transform: none;
+  display: inline-block;
+  clear: right;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.price {
+  padding-top: 30px;
+}
+
+.price span {
+  color: #2BB62B;
+}
+
+.client-info {
+  min-width: 300px;
+  float: left;
+  clear: right;
+}
+
+.pizza-form input[type="submit"] {
+  margin: 15px 5px;
+}
+
+label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

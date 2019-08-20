@@ -1,0 +1,81 @@
+body {
+    font: 11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+    color: #333;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    margin: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+h1,
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.header {
+    font: 700 18pt/24pt "Calibri";
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.sent-link {
+    margin-left: 40px;
+}
+
+.first-part {
+    font-family: "Segoe UI", sans-serif;
+    padding-bottom: 20px;
+}
+
+pre {
+    font-family: "Calibri", sans-serif;
+    font-style: italic;
+}
+
+.color-red {
+    color: #f00;
+}
+
+.color-green {
+    color: #008000;
+}
+
+.color-blue {
+    color: #00f;
+}
+
+.color-yellow {
+    color: #ff0;
+}
+
+.hr-first {
+    border: 1px solid #f00;
+}
+
+.hr-second {
+    border: 2px solid #008000;
+}
+
+.hr-last {
+    border: 2px solid #0000ff;
+}

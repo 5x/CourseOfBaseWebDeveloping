@@ -1,0 +1,309 @@
+body {
+  font: 11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+  color: #333;
+  background: #2F2F2F;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d73a3d;
+}
+
+.wrap {
+  width: 100%;
+  min-width: 960px;
+}
+
+.main {
+  width: 90%;
+  padding: 50px 5% 50px;
+}
+
+.page-wrap {
+  background: #F0F0F0;
+}
+
+.content {
+  padding: 35px;
+  background: #FFF;
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+.logo {
+  text-align: center;
+  border-bottom: 1px solid #EEE;
+  padding: 35px 0;
+  background: #FFF;
+}
+
+.menu {
+  background: #FFF;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  font-size: 80%;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  color: #777;
+}
+
+.menu li a:hover {
+  background: #d73a3d;
+  color: #FFF;
+}
+
+.menu li a.active {
+  padding-bottom: 13px;
+  border-bottom: 2px solid #d73a3d;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  padding: 15px 0;
+}
+
+.room-order, input {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.main-content {
+  margin-right: 360px;
+  overflow: hidden;
+}
+
+.main-content img {
+  max-width: 100%;
+}
+
+.right-side {
+  float: right;
+}
+
+.side-header {
+  display: inline-block;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #bd3336;
+}
+
+.side-block {
+  width: 280px;
+  padding: 20px;
+  margin: 0 0 20px;
+}
+
+.room-order {
+  background: #fff9a8;
+}
+
+.room-order label {
+  width: 80px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: #FFF;
+  text-indent: 7px;
+  outline: none;
+  border: 1px solid #DDD;
+  height: 24px;
+  box-sizing: border-box;
+  width: 196px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #d77b00;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+input:focus:invalid {
+  border-color: #d73a3d;
+}
+
+.order {
+  float: right;
+  border: 1px solid #bd3336;
+  outline: none;
+  background: #d73a3d;
+  color: #FFF;
+  padding: 7px 25px;
+}
+
+.order:hover {
+  background: #f64548;
+}
+
+.change-preview {
+  font-size: 80%;
+  font-style: italic;
+  line-height: 32px;
+}
+
+.order-foo {
+  height: 32px;
+  margin: 10px 0 0;
+  vertical-align: middle;
+}
+
+.last-news {
+  overflow: hidden;
+}
+
+.last-news ul {
+  display: block;
+}
+
+.last-news li {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+}
+
+li.last-el {
+  margin-right: 0;
+}
+
+.last-news li img {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.content, .menu {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.top {
+  max-width: 1080px;
+  margin: 0 auto;
+  font-size: 80%;
+  color: #939393;
+  padding: 10px 35px;
+}
+
+.top ul {
+  float: right;
+  text-align: right;
+}
+
+.top li {
+  display: inline-block;
+}
+
+.top li a {
+  color: #DDD;
+}
+
+.top li a:hover,
+.top .active {
+  color: #FFF;
+}
+
+.contact-list ul {
+  list-style: none;
+  padding: 5px 0 25px;
+}
+
+.contact-list a {
+  text-decoration: underline;
+}
+
+
+.list li {
+  padding: 10px 0;
+  clear: both;
+}
+
+.room-header {
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 10px 0 0;
+}
+
+.list-details {
+  margin-left: 40%;
+}
+
+.price {
+  position: absolute;
+  z-index: 999;
+  background: #57b257;
+  font-size: 80%;
+  padding: 5px 10px 5px 15px;
+  margin: 15px 0 0;
+  color: #FFF;
+}
+
+.view-more {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.list-img {
+  width: 35%;
+  float: left;
+  margin-right: 20px;
+}
+
+.list-img img {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.gallery, .list, .top ul, .last-news ul, .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery li {
+  width: 33.33%;
+  display: block;
+  float: left;
+  margin: 0 0 20px;
+}
+
+.gallery img {
+  width: 86.66%;
+  padding: 5px;
+  border: 1px solid #ddd;
+}

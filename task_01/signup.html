@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SingUp Page | Lab01</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<div class="wrap">
+    <p><a href="index.html">Головна сторінка</a></p>
+    <div class="sign_up_form">
+    <form id="sign_up" method="get" action="%20">
+        <div class="ath_name">
+            <div class="first_name">
+                <label for="first_name">I'мя</label>
+                <input type="text" name="first_name" id="first_name" maxlength="32"/>
+            </div>
+
+            <div class="last_name">
+                <label for="last_name">Прізвище</label>
+                <input type="text" name="last_name" id="last_name" maxlength="32"/>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <label for="mail">E-mail</label>
+        <input type="email" name="mail" id="mail" spellcheck="false" maxlength="64" required/>
+
+        <label for="passwd">Пароль</label>
+        <input type="password" name="passwd" id="passwd" maxlength="64" required/>
+
+        <br/>
+        <fieldset>
+            <legend>Улюблена страва</legend>
+            <label><input type="checkbox" name="loveEat0"/> Борщ</label>
+            <label><input type="checkbox" name="loveEat1"/> Борщ</label>
+            <label><input type="checkbox" name="loveEat2"/> Борщ</label>
+            <label><input type="checkbox" name="loveEat3"/> Борщ</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Зручний час</legend>
+            <label><input type="radio" name="time"/> AM</label>
+            <label><input type="radio" name="time"/> PM</label>
+        </fieldset>
+
+        <label for="music">Вибір музикальних композицій</label>
+        <select name="love_music" id="music" size="4" multiple>
+            <option selected value="The Fox">Ylvis - The Fox (What Does The Fox Say?)</option>
+            <option value="Wrecking Ball">Miley Cyrus - Wrecking Ball</option>
+            <option value="La La La">Naughty Boy - La La La ft. Sam Smith</option>
+            <option value="Blurred Lines">Robin Thicke - Blurred Lines ft. T.I., Pharrell</option>
+            <option value="Wake Me Up">Avicii, Aloe Blacc - Wake Me Up</option>
+        </select>
+
+        <div class="center_inl">
+            <input type="submit" id="submit" class="btn-sbm" value="Sign Up"/>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

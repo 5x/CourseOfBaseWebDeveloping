@@ -1,0 +1,21 @@
+body {
+    font:11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+    color:#333;
+    width:100%;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    margin: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+pre {
+    line-height: 1;
+}

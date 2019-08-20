@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Pizza!</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<div class="wrap pizza-form">
+    <h1>Замовлення</h1>
+    <form action="/" method="post" id="form">
+        <div class="form-content">
+            <div class="el">
+                <label for="size">Розмір піцци</label>
+                <select name="size" id="size">
+                    <option value="big" selected>Small [25sm/350g]</option>
+                    <option value="middle">Middle [30sm/600g]</option>
+                    <option value="small">Big [35sm/900g]</option>
+                </select>
+            </div>
+            <div class="el check-list">
+                <label>Додаткові інгредіенти:</label>
+                <input type="checkbox" name="mushroom" id="mushroom"/>
+                <label for="mushroom" class="check-label">Гриби</label><br/>
+                <input type="checkbox" name="tomato" id="tomato"/>
+                <label for="tomato" class="check-label">Помідори</label><br/>
+                <input type="checkbox" name="bacon" id="bacon"/>
+                <label for="bacon" class="check-label">Бекон</label><br/>
+                <input type="checkbox" name="cheese" id="cheese"/>
+                <label for="cheese" class="check-label">Сир</label><br/>
+                <input type="checkbox" name="olive" id="olive"/>
+                <label for="olive" class="check-label">Оливки</label>
+            </div>
+        </div>
+        <div class="client-info">
+            <div class="el">
+                <label for="name">Им'я</label>
+                <input type="text" name="name" id="name" pattern=".{3,}" value="Іванов Іван Петрович" title="Ми повині знати як до вас звертатись" maxlength="60" required aria-required="true"/>
+            </div>
+            <div class="el">
+                <label for="login">Телефон</label>
+                <input type="tel" name="login" id="login" pattern="[0-9-+() ]{5,}" value="(044) 123-45-67" title="Контактний телефон" maxlength="25" required aria-required="true"/>
+            </div>
+            <div class="el">
+                <label for="adress">Адресса</label>
+                <input type="text" name="adress" id="adress" value="Київ. проспект Перемоги 5д, кв. 86" maxlength="60" required aria-required="true"/>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="el price">Сумма замовлення: <span id="price">60.00</span>грн.</div>
+        <input type="submit" value="Відправити замовлення"/>
+    </form>
+</div>
+<script src="src/script.js"></script>
+</body>
+</html>

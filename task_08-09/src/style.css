@@ -1,0 +1,53 @@
+body {
+  font: 11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+  color: #333;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  margin: 5%;
+}
+
+.clear {
+  clear: both;
+}
+
+.blocks div, .art div {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  float: left;
+  background: #7e7e7e;
+}
+
+div.pr {
+  background: #aaaaaa;
+}
+
+.red {
+  color: #d73a3d;
+}
+
+div.blue {
+  background: #007ca7;
+}
+
+.art {
+  margin-left: 250px;
+}
+
+.fix {
+  position: fixed;
+  width: 250px;
+  left: 0;
+  top: 0;
+  padding: 80px 30px;
+}
+
+.fix a {
+  display: block;
+  padding: 5px 15px;
+}

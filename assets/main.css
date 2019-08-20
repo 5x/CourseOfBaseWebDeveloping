@@ -1,0 +1,40 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #006689;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #008eb1;
+}
+
+.container {
+    width: 650px;
+    margin: 5em auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.task {
+    margin: 1em 0;
+    padding: 2em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.task__title {
+    font-size: 1.64em;
+    font-weight: 700;
+}
+
+.task_link {
+    padding-right: 5px;
+}

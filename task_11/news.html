@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Новини | Міні готель в Ужгороді</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        +38 (044) 12-34-56 (маркетинг) | +38 (044) 12-34-56 (рецепція)
+        <ul>
+            <li><a href="index.html?ln=ru">RU</a> | </li>
+            <li><a href="index.html?ln=en">EN</a> | </li>
+            <li><a href="index.html?ln=ua" class="active">UA</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="page-wrap">
+        <div class="logo">
+            <a href="index.html"><img src="src/logo.png" alt="Міні готель в Ужгороді" title="Міні готель в Ужгороді"/></a>
+        </div>
+        <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="service.html">Послуги</a></li>
+                <li><a href="news.html" class="active">Новини</a></li>
+                <li><a href="history.html">Історія</a></li>
+                <li><a href="rooms.html">Кімнати</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="content">
+                <aside>
+                    <div class="right-side">
+                        <div class="side-block room-order">
+                            <form method="get">
+                                <div><div class="side-header">Бронювання</div></div>
+                                <label for="from_date">Заїзд: </label>
+                                <input type="text" name="from_date" id="from_date" title="Дата заїзду" pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$" required aria-required="true"/>
+                                <label for="to_date">Виїзд: </label>
+                                <input type="text" name="to_date" id="to_date" title="Дата виїзду" pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$" required aria-required="true"/>
+                                <label for="order_num">Номерів: </label>
+                                <input type="number" name="order_num" id="order_num" value="1" min="1" title="Кількість номерів, що слід забронювати" required aria-required="true"/>
+                                <div class="order-foo">
+                                    <a href="#" class="change-preview">Змінити бронювання</a>
+                                    <input type="submit" value="Забронювати" class="order"/>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="side-block  promo-t">
+                            <div><div class="side-header">3D тур по готелю</div></div>
+                            <a href="#"><img src="src/3d-hotel.jpg" alt="3D тур по готелю"/></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="main-content">
+                    <main role="main">
+                        <article>
+                            <header>
+                                <h1>Новини</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, possimus reprehenderit. Ad aliquid doloremque esse inventore minima natus nobis omnis provident reiciendis sapiente soluta, voluptates.</p>
+                            </header>
+                            <ul class="list">
+                                <li>
+                                    <a href="news-new-year.html" class="list-img">
+                                        <img src="src/img/1.jpg" alt="Мальовничий вікенд в Ужгороді"/>
+                                    </a>
+                                    <div class="list-details">
+                                        <div class="room-header">Мальовничий вікенд в Ужгороді</div>
+                                        <p>Проведіть незабутні вихідні у мальовничому місті Ужгороді! Чудова природа, свіже повітря надасть Вам наснаги та зніме всю втому, яка накопилася за весь робочий тиждень. Саме такий вікенд пропонує Вам готель "Прага".</p>
+                                        <a class="view-more" href="news-new-year.html">Дізнатися більше</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li>
+                                    <a href="news-new-year.html" class="list-img">
+                                        <img src="src/img/3.jpg" alt="Проведення корпоративів на будь-який смак"/>
+                                    </a>
+                                    <div class="list-details">
+                                        <div class="room-header">Проведення корпоративів на будь-який смак</div>
+                                        <p>Приймаємо замовлення на проведення корпоративів на будь-який смак...</p>
+                                        <a class="view-more" href="news-new-year.html">Дізнатися більше</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="news-new-year.html" class="list-img">
+                                        <img src="src/img/4.jpg" alt="Зустріч Нового Року в ресторані «Гурме» «Як у нас на Україні…»"/>
+                                    </a>
+                                    <div class="list-details">
+                                        <div class="room-header">Зустріч Нового Року в ресторані «Гурме» «Як у нас на Україні…»</div>
+                                        <p>Музичне оформлення, ведучі та новорічна програма від «Comedy org», спеціальна фотозона і фотосесія для гостей, козацький стіл, розіграш сертифікатів на проживання в готелі та вечері в ресторані</p>
+                                        <a class="view-more" href="news-new-year.html">Дізнатися більше</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="news-new-year.html" class="list-img">
+                                        <img src="src/img/5.jpg" alt="Подарункові сертифікати на всі послуги готелю «Praha»"/>
+                                    </a>
+                                    <div class="list-details">
+                                        <div class="room-header">Подарункові сертифікати на всі послуги готелю «Praha»</div>
+                                        <p>Спеціально для Вас подарункові сертифікати на всі послуги готелю «Praha»</p>
+                                        <a class="view-more" href="news-new-year.html">Дізнатися більше</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                        </article>
+                    </main>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>© 2014. Усі права захищені.</footer>
+    </div>
+</div>
+<script src="src/script.js"></script>
+</body>
+</html>

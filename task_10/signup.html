@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Sign UP!</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<div class="wrap login-form">
+    <h1>Реєстрація</h1>
+    <div class="login-form-content">
+    <form action="/" method="post">
+        <div class="el first-half">
+            <label for="user-name">Ім'я</label>
+            <input type="text" name="user-name" id="user-name" maxlength="40" required aria-required="true"/>
+        </div>
+        <div class="el last-half">
+            <label for="surname">Прізвище</label>
+            <input type="text" name="surname" id="surname" maxlength="40" required aria-required="true"/>
+        </div>
+        <div class="clear"></div>
+        <div class="el">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" pattern="[a-z0-9_-]{3,}" title="Логін повинен складатися більш ніж з 3 символів та включати символи латинського алфавіту, цифри, знак підкреслення і дифіз" maxlength="25" required aria-required="true"/>
+        </div>
+
+        <div class="el">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" maxlength="320" id="email" pattern="^([A-z0-9_\.\+-]+)@([\dA-z\.-]+)\.([A-z\.]{2,6})$" required aria-required="true"/>
+        </div>
+
+        <div class="el">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" pattern=".{8,}" title="Пароль повинен мыстити більш ніж 8 символів"  maxlength="80" onchange="form.passwd.pattern = this.value;" required aria-required="true"/>
+        </div>
+        <div class="el">
+            <label for="passwd">Підтвердження паролю</label>
+            <input type="password" name="passwd" id="passwd" title="Пароль повинен співпадати" maxlength="80" required aria-required="true"/>
+        </div>
+
+        <div class="el first-trs">
+            <label for="day">День</label>
+            <input type="text" name="day" id="day" pattern="(0[1-9]|[12]\d|3[01])" title="Введіть день вашого народження(01-31)" maxlength="2" required aria-required="true"/>
+        </div>
+        <div class="el middle-trs">
+            <label for="month">Місяць</label>
+            <select name="month" id="month">
+                <option value="01">Січень</option>
+                <option value="02">Лютий</option>
+                <option value="03">Березень</option>
+                <option value="04">Квітень</option>
+                <option value="05">Травень</option>
+                <option value="06">Червень</option>
+                <option value="07">Липень</option>
+                <option value="08">Серпень</option>
+                <option value="09">Вересень</option>
+                <option value="10">Жовтень</option>
+                <option value="11">Листопад</option>
+                <option value="12">Грудень</option>
+            </select>
+        </div>
+        <div class="el last-trs">
+            <label for="year">Рік народження</label>
+            <input type="text" name="year" id="year" pattern="^(19|20)\d{2}$" maxlength="4" required aria-required="true"/>
+        </div>
+
+        <div class="el">
+        <label for="gender">Стать</label>
+        <select name="gender" id="gender">
+            <option value="Male">Чоловіча</option>
+            <option value="Female">Жіноча</option>
+            <option value="Female">Не вказано</option>
+        </select>
+        </div>
+
+        <input type="submit" value="Sign UP"/>
+    </form>
+
+    </div>
+</div>
+
+<audio autoplay loop>
+    <source src="src/1.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="src/1.m4a" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

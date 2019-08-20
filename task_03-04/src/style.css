@@ -1,0 +1,71 @@
+body {
+    font: 11pt/14pt "Arial", "Helvetica", "Tahoma", sans-serif;
+    color: #333;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    margin: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.deb {
+    border: 1px solid #c0c0c0;
+    width: 100%;
+}
+
+.stack {
+    height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ctr-val {
+    border-left: 1px solid #c0c0c0;
+    margin-left: 220px;
+}
+
+.deb-stk {
+    float:left;
+    width: 220px;
+}
+
+.stack ul {
+    padding: 0;
+    margin: 0;
+    font: 10pt/14pt "Consolas", monospace;
+}
+
+.stack ul li {
+    list-style-type: none;
+    padding: 0 0 0 24px;
+}
+
+.stack ul li:nth-child(odd) {
+    background: #eee;
+}
+
+.deb-stk ul li.active {
+    padding: 0;
+}
+
+.deb-stk ul li.active::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    margin: 4px 7px;
+    float: left;
+    line-height: inherit;
+}
+
+form {
+    margin: 30px 0;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Фотогалерея | Міні готель в Ужгороді</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="stylesheet" type="text/css" href="src/gallery/shadowbox.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        +38 (044) 12-34-56 (маркетинг) | +38 (044) 12-34-56 (рецепція)
+        <ul>
+            <li><a href="index.html?ln=ru">RU</a> | </li>
+            <li><a href="index.html?ln=en">EN</a> | </li>
+            <li><a href="index.html?ln=ua" class="active">UA</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="page-wrap">
+        <div class="logo">
+            <a href="index.html"><img src="src/logo.png" alt="Міні готель в Ужгороді" title="Міні готель в Ужгороді"/></a>
+        </div>
+        <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="service.html">Послуги</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="history.html">Історія</a></li>
+                <li><a href="rooms.html">Кімнати</a></li>
+                <li><a href="gallery.html" class="active">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="content">
+                <aside>
+                    <div class="right-side">
+                        <div class="side-block room-order">
+                            <form method="get">
+                                <div><div class="side-header">Бронювання</div></div>
+                                <label for="from_date">Заїзд: </label>
+                                <input type="text" name="from_date" id="from_date" title="Дата заїзду" pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$" required aria-required="true"/>
+                                <label for="to_date">Виїзд: </label>
+                                <input type="text" name="to_date" id="to_date" title="Дата виїзду" pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$" required aria-required="true"/>
+                                <label for="order_num">Номерів: </label>
+                                <input type="number" name="order_num" id="order_num" value="1" min="1" title="Кількість номерів, що слід забронювати" required aria-required="true"/>
+                                <div class="order-foo">
+                                    <a href="#" class="change-preview">Змінити бронювання</a>
+                                    <input type="submit" value="Забронювати" class="order"/>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="side-block  promo-t">
+                            <div><div class="side-header">3D тур по готелю</div></div>
+                            <a href="#"><img src="src/3d-hotel.jpg" alt="3D тур по готелю"/></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="main-content">
+                    <main role="main">
+                        <article>
+                            <header>
+                                <h1>Фотогалерея</h1>
+                             </header>
+
+                            <ul class="gallery">
+                                <li><a href="src/img/f1.jpg" rel="shadowbox[i]"><img src="src/img/g1.jpg" alt="Фото 1"></a></li>
+                                <li><a href="src/img/f2.jpg" rel="shadowbox[i]"><img src="src/img/g2.jpg" alt="Фото 2"></a></li>
+                                <li><a href="src/img/f3.jpg" rel="shadowbox[i]"><img src="src/img/g3.jpg" alt="Фото 3"></a></li>
+                                <li><a href="src/img/f4.jpg" rel="shadowbox[i]"><img src="src/img/g4.jpg" alt="Фото 4"></a></li>
+                                <li><a href="src/img/f5.jpg" rel="shadowbox[i]"><img src="src/img/g5.jpg" alt="Фото 5"></a></li>
+                                <li><a href="src/img/f6.jpg" rel="shadowbox[i]"><img src="src/img/g6.jpg" alt="Фото 6"></a></li>
+                                <li><a href="src/img/f1.jpg" rel="shadowbox[i]"><img src="src/img/g7.jpg" alt="Фото 7"></a></li>
+                                <li><a href="src/img/f2.jpg" rel="shadowbox[i]"><img src="src/img/g8.jpg" alt="Фото 8"></a></li>
+                                <li><a href="src/img/f3.jpg" rel="shadowbox[i]"><img src="src/img/g9.jpg" alt="Фото 9"></a></li>
+                                <li><a href="src/img/f4.jpg" rel="shadowbox[i]"><img src="src/img/g10.jpg" alt="Фото 10"></a></li>
+                                <li><a href="src/img/f5.jpg" rel="shadowbox[i]"><img src="src/img/g11.jpg" alt="Фото 11"></a></li>
+                                <li><a href="src/img/f6.jpg" rel="shadowbox[i]"><img src="src/img/g12.jpg" alt="Фото 12"></a></li>
+                                <li><a href="src/img/f1.jpg" rel="shadowbox[i]"><img src="src/img/g13.jpg" alt="Фото 13"></a></li>
+                                <li><a href="src/img/f2.jpg" rel="shadowbox[i]"><img src="src/img/g14.jpg" alt="Фото 14"></a></li>
+                                <li><a href="src/img/f3.jpg" rel="shadowbox[i]"><img src="src/img/g15.jpg" alt="Фото 15"></a></li>
+                            </ul>
+                        </article>
+                    </main>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>© 2014. Усі права захищені.</footer>
+    </div>
+</div>
+<script type="text/javascript" src="src/gallery/shadowbox.js"></script>
+<script type="text/javascript">
+    Shadowbox.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Lab03-04</title>
+    <link rel="stylesheet" href="src/normalize.css"/>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="deb">
+        <div class="deb-stk stack">
+            <ul>
+                <li>x = 16, y = 15, z = 4</li>
+                <li>x+=y-x++*z</li>
+                <li class="active">z=--x-y*5</li>
+                <li>y/=x+5%z</li>
+                <li>z=x++ +y*5</li>
+                <li>x=y-x++*z</li>
+            </ul>
+        </div>
+        <div class="ctr-val stack">
+            <ul></ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <form>
+        <label for="a">a: </label>
+        <input type="text" name="a" id="a" maxlength="9"/>
+        <label for="b">b: </label>
+        <input type="text" name="b" id="b" maxlength="9"/>
+        <label for="c">c: </label>
+        <input type="text" name="c" id="c" maxlength="9"/>
+        <label for="R">Результат: </label>
+        <input type="text" name="R" id="R" maxlength="9"/>
+        <input type="button" value="Calculate" id="calculate"/>
+    </form>
+
+    <form>
+        <label for="radius">R: </label>
+        <input type="text" name="radius" id="radius" maxlength="9"/>
+        <label for="height">h: </label>
+        <input type="text" name="height" id="height" maxlength="9"/>
+        <label><input type="radio" name="func_type" id="volumeOf" checked/> Об’єм</label>
+        <label><input type="radio" name="func_type" id="surfaceAreaOf"/> Площа поверхні</label>
+        <label for="cylinder_result">Результат: </label>
+        <input type="text" name="height" id="cylinder_result" maxlength="9"/>
+        <input type="button" value="Calculate" id="cylinder"/>
+    </form>
+
+    <form>
+        <label><input type="radio" name="num_func_type" id="addition" checked/> addition</label>
+        <label><input type="radio" name="num_func_type" id="subtraction"/> subtraction</label>
+        <label><input type="radio" name="num_func_type" id="multiplication"/> multiplication</label>
+        <label><input type="radio" name="num_func_type" id="division"/> division</label>
+        <label for="num_result">Результат: </label>
+        <input type="text" name="num_result" id="num_result" maxlength="9"/>
+        <input type="button" value="Calculate" id="num"/>
+    </form>
+
+</div>
+<script src="src/lab_js_1.js"></script>
+<script src="src/test2.js"></script>
+</body>
+</html>
